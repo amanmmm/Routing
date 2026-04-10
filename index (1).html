@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Routing Simulator - Dijkstra with Routers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="info">
+    <h2>Routing Simulator - Dijkstra’s Algorithm with Routers</h2>
+    <p>Modes: Add nodes, connect edges, simulate routing, or clear the network</p>
+    <button id="addNodeBtn">➕ Add Node</button>
+    <button id="addEdgeBtn">🔗 Add Connection</button>
+    <button id="simulateBtn">▶ Simulate Routing</button>
+    <button id="showTableBtn">📄 Show Routing Table</button>
+    <button id="clearBtn">🧹 Clear Network</button>
+  </div>
+
+  <div id="log">Ready...</div>
+
+  <canvas id="network" width="1000" height="600"></canvas>
+
+  <!-- Routing Table Section -->
+  <div id="routingTable" class="hidden">
+    <h3>📋 Routing Table</h3>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Hop</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Distance (Cost)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+  background: #0d1117;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+canvas {
+  background: radial-gradient(circle at center, #161b22 0%, #0d1117 100%);
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #30363d;
+}
+
+#info {
+  text-align: center;
+  padding: 10px;
+}
+
+#log {
+  text-align: center;
+  padding: 10px;
+  font-family: monospace;
+  color: #58a6ff;
+  min-height: 25px;
+}
+
+button {
+  background: #238636;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+button.active {
+  background: #1f6feb;
+}
+
+h2 {
+  color: #58a6ff;
+}
+
+/* Routing Table styling */
+#routingTable {
+  background: #161b22;
+  border: 1px solid #30363d;
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+#routingTable.hidden {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #30363d;
+  padding: 6px;
+}
+
+th {
+  background: #1f6feb;
+}
